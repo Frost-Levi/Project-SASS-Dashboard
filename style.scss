@@ -1,6 +1,16 @@
 $textcolor: rgb(243, 73, 73);
 $textcolor2: rgb(94, 94, 94);
 
+@mixin theme {
+    background-color: white;
+    border: 1px solid #ddd;
+    height: 200px;
+    width: 200px;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
 header {
     background-color: rgb(22, 22, 22);
     display: flex;
@@ -35,7 +45,7 @@ header {
 }
 .sidenav {
     background-color: #d1cbc4;
-    height: 100vh;
+    height: calc(100vh - 60px);
     width: 200px;
     padding-top: 0px;
     margin-top: 0px;
@@ -51,13 +61,13 @@ header {
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     background-color: #f4f4f4;
 }
 #top {
     padding: 20px;
     background-color: white;
-    width: calc(100% - 200px);
+    width: calc(100% - 240px);
     position: relative;
     top: -25px;
     left: 200px;
@@ -67,4 +77,32 @@ body {
         font-size: 14px;
         color: $textcolor2;
     }
+}
+li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+.box1 {
+    position: absolute;
+    top: 200px;
+    left: 220px;
+    @include theme;
+}
+.box2 {
+    position: absolute;
+    top: 200px;
+    left: 520px;
+    @include theme;
+}
+.box3 {
+    position: absolute;
+    top: 200px;
+    left: 820px;
+    @include theme;
+}
+.box4 {
+    position: absolute;
+    top: 200px;
+    left: 1120px;
+    @include theme;
 }

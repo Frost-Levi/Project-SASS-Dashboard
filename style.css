@@ -32,7 +32,7 @@ header i {
 
 .sidenav {
   background-color: #d1cbc4;
-  height: 100vh;
+  height: calc(100vh - 60px);
   width: 200px;
   padding-top: 0px;
   margin-top: 0px;
@@ -48,14 +48,14 @@ header i {
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   background-color: #f4f4f4;
 }
 
 #top {
   padding: 20px;
   background-color: white;
-  width: calc(100% - 200px);
+  width: calc(100% - 240px);
   position: relative;
   top: -25px;
   left: 200px;
@@ -64,4 +64,61 @@ body {
   margin-left: 10px;
   font-size: 14px;
   color: rgb(94, 94, 94);
+}
+
+li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.box1 {
+  position: absolute;
+  top: 200px;
+  left: 220px;
+  background-color: white;
+  border: 1px solid #ddd;
+  height: 200px;
+  width: 200px;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.box2 {
+  position: absolute;
+  top: 200px;
+  left: 520px;
+  background-color: white;
+  border: 1px solid #ddd;
+  height: 200px;
+  width: 200px;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.box3 {
+  position: absolute;
+  top: 200px;
+  left: 820px;
+  background-color: white;
+  border: 1px solid #ddd;
+  height: 200px;
+  width: 200px;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.box4 {
+  position: absolute;
+  top: 200px;
+  left: 1120px;
+  background-color: white;
+  border: 1px solid #ddd;
+  height: 200px;
+  width: 200px;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
 }/*# sourceMappingURL=style.css.map */
