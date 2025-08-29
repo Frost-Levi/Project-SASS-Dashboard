@@ -3,8 +3,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10px;
+  padding: 10px 10px 20px 10px 20px;
   pointer-events: none;
+  margin-bottom: 0px;
 }
 header a {
   text-decoration: none;
@@ -29,8 +30,38 @@ header i {
   border: 1px solid rgb(94, 94, 94);
 }
 
+.sidenav {
+  background-color: #d1cbc4;
+  height: 100vh;
+  width: 200px;
+  padding-top: 0px;
+  margin-top: 0px;
+  position: absolute;
+  top: 60px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.sidenav a {
+  text-decoration: none;
+  color: rgb(94, 94, 94);
+  font-size: 20px;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
+}
+
+#top {
+  padding: 20px;
+  background-color: white;
+  width: calc(100% - 200px);
+  position: relative;
+  top: -25px;
+  left: 200px;
+}
+#top span {
+  margin-left: 10px;
+  font-size: 14px;
+  color: rgb(94, 94, 94);
 }/*# sourceMappingURL=style.css.map */
