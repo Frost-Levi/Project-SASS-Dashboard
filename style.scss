@@ -1,14 +1,16 @@
 $textcolor: rgb(243, 73, 73);
 $textcolor2: rgb(94, 94, 94);
 
-@mixin theme {
+@mixin boxtheme($height: 75px, $width: 300px) {
     background-color: white;
     border: 1px solid #ddd;
-    height: 200px;
-    width: 200px;
+    height: $height;
+    width: $width;
     border-radius: 4px;
     padding: 10px;
     margin: 10px 0;
+    color: $textcolor;
+    font-size: 35px;
 }
 
 header {
@@ -50,12 +52,13 @@ header {
     padding-top: 0px;
     margin-top: 0px;
     position: absolute;
-    top: 60px;
+    top: 0px;
      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     a {
         text-decoration: none;
         color: $textcolor2;
         font-size: 20px;
+        pointer-events: all;
     }
 }
 
@@ -63,6 +66,7 @@ body {
     margin: 0;
     font-family: Arial;
     background-color: #f4f4f4;
+    pointer-events: none;
 }
 #top {
     padding: 20px;
@@ -82,27 +86,48 @@ li {
         padding-top: 5px;
         padding-bottom: 5px;
     }
-.box1 {
+
+.topdash{
     position: absolute;
-    top: 200px;
-    left: 220px;
-    @include theme;
+    left: 200px;
+    width: calc(100% - 200px);
+    display: flex;
+    .box {
+        @include boxtheme;
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    }
+    span {
+        margin-left: 10px;
+        font-size: 14px;
+        color: $textcolor2;
+        margin-right: 80px;
+
+    }
+    i {
+        margin-left: auto;
+        color: $textcolor2;
+        font-size: 25px;
+        align-self: center;
+    }
 }
-.box2 {
-    position: absolute;
-    top: 200px;
-    left: 520px;
-    @include theme;
-}
-.box3 {
-    position: absolute;
-    top: 200px;
-    left: 820px;
-    @include theme;
-}
-.box4 {
-    position: absolute;
-    top: 200px;
-    left: 1120px;
-    @include theme;
+.bottomdash {
+    margin-left: 200px;
+    width: calc(100% - 200px);
+    height: 400px;
+    margin-top: 100px;
+    
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .box {
+        @include boxtheme(300px, 45%);
+        float: right;
+        font-size: 28px;
+    
+    
+    }
+
 }
