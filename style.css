@@ -37,7 +37,7 @@ header i {
   padding-top: 0px;
   margin-top: 0px;
   position: absolute;
-  top: 0px;
+  top: 59px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .sidenav a {
@@ -127,4 +127,10 @@ li {
   font-size: 35px;
   float: right;
   font-size: 28px;
+}
+
+img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
